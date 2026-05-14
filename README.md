@@ -14,7 +14,7 @@ HTML · CSS · Vanilla JavaScript — no frameworks, fast by default.
 - **About** — Background, stats, stack fingerprint terminal
 - **Tech Stack** — MERN, Languages, Mobile & AI, Tools (animated marquee)
 - **Selected Work** — 6 projects with GitHub links and impact-first descriptions
-- **Achievements** — Harvard CS50x, CS50 Python, Kaggle ML, iOS Bootcamp, O-Levels, NUCES CBS
+- **Awards & Certificates** — O-Levels High Achiever, Harvard CS50x, CS50 Python, Kaggle ML, iOS Bootcamp, Sr VP NUCES CBS (Character Building Society)
 - **Contact** — Email, LinkedIn, GitHub
 
 ## Projects
