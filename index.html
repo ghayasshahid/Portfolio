@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ghayas Shahid — CS Student & Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Ghayas Shahid, CS Student at NUCES FAST and Full-Stack Developer based in Lahore, Pakistan." />
+  <title>Ghayas Shahid — Full-Stack Developer & AI Engineer</title>
+  <meta name="description" content="Ghayas Shahid builds full-stack AI-powered products. React, Node.js, Flutter, and ML — based in Lahore, Pakistan." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -12,11 +12,9 @@
 </head>
 <body>
 
-  <!-- Custom cursor (desktop only) -->
   <div class="cursor-ring" id="cursor-ring"></div>
-  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-dot"  id="cursor-dot"></div>
 
-  <!-- Noise texture overlay -->
   <svg class="noise-svg" aria-hidden="true" focusable="false">
     <filter id="noise-filter">
       <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/>
@@ -34,9 +32,9 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#skills">Stack</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#achievements">Awards</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -46,7 +44,6 @@
 
     <!-- ===== HERO ===== -->
     <section id="hero">
-      <!-- Ambient orbs -->
       <div class="orb orb-1" aria-hidden="true"></div>
       <div class="orb orb-2" aria-hidden="true"></div>
       <div class="orb orb-3" aria-hidden="true"></div>
@@ -54,7 +51,7 @@
       <div class="hero-content">
         <div class="hero-badge">
           <span class="badge-pulse"></span>
-          Available for opportunities
+          Available &mdash; full-time &amp; internship roles
         </div>
 
         <h1 class="hero-name">
@@ -66,9 +63,12 @@
           </div>
         </h1>
 
-        <div class="hero-meta">
-          <div class="hero-rule" aria-hidden="true"></div>
-          <p class="hero-role">CS Student <span class="amp">&amp;</span> Full-Stack Developer</p>
+        <div class="hero-caps">
+          <span>Full-Stack Web</span>
+          <span class="cap-sep" aria-hidden="true">·</span>
+          <span>Mobile Engineering</span>
+          <span class="cap-sep" aria-hidden="true">·</span>
+          <span>AI&nbsp;/&nbsp;ML Products</span>
         </div>
 
         <p class="hero-tagline">
@@ -76,7 +76,7 @@
         </p>
 
         <div class="hero-ctas">
-          <a href="#projects" class="btn btn-primary magnetic">View My Work <span class="btn-arr">↗</span></a>
+          <a href="#work" class="btn btn-primary magnetic">View My Work <span class="btn-arr">↗</span></a>
           <a href="#contact" class="btn btn-ghost magnetic">Let's Talk</a>
         </div>
       </div>
@@ -92,38 +92,40 @@
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">01</span>
-          <h2 class="sec-title">About Me</h2>
+          <h2 class="sec-title">About</h2>
         </div>
 
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              I'm a third-year Computer Science student at <strong>NUCES FAST</strong> in Lahore,
-              Pakistan — obsessed with building real, useful products that actually ship.
+              CS student at NUCES FAST, Lahore — but the real education happens when I'm shipping.
+              I build <strong>full-stack products at the intersection of modern web engineering and applied AI</strong>,
+              with a focus on work that moves from idea to deployed, production-grade app.
             </p>
             <p>
-              I work across the full stack: React frontends, Node backends, Flutter mobile apps,
-              and even x86 Assembly games. I care about craft at every layer.
+              My stack covers React/Next.js frontends, Node.js APIs, PostgreSQL and MongoDB backends,
+              Flutter mobile apps, and <strong>ML-powered recommendation engines</strong>.
+              I own the full product surface — architecture, UX, and deployment.
             </p>
             <p>
-              Outside code, I serve as <strong>Senior VP at NUCES CBS</strong>,
-              bridging the gap between students and the tech industry.
+              Outside code, I lead as <strong>Senior VP at NUCES CBS</strong> —
+              connecting students to the industry I'm actively breaking into.
             </p>
           </div>
 
           <div class="about-right">
             <div class="about-stats reveal">
               <div class="stat-card">
-                <span class="stat-num">2+</span>
-                <span class="stat-label">Years building</span>
-              </div>
-              <div class="stat-card">
                 <span class="stat-num">6</span>
-                <span class="stat-label">Projects shipped</span>
+                <span class="stat-label">Products shipped</span>
               </div>
               <div class="stat-card">
-                <span class="stat-num">5</span>
-                <span class="stat-label">Certs &amp; awards</span>
+                <span class="stat-num">10+</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">AI</span>
+                <span class="stat-label">Core focus</span>
               </div>
             </div>
 
@@ -135,11 +137,11 @@
                 <span class="terminal-fname">ghayas.config</span>
               </div>
               <div class="terminal-body">
-                <pre><code><span class="tc">// current status</span>
-<span class="tk">location</span>  <span class="to">=</span> <span class="tv">"Lahore, PK"</span>
-<span class="tk">uni</span>       <span class="to">=</span> <span class="tv">"NUCES FAST"</span>
-<span class="tk">year</span>      <span class="to">=</span> <span class="tv">"3rd · CS"</span>
-<span class="tk">open</span>      <span class="to">=</span> <span class="tv teal">true</span></code></pre>
+                <pre><code><span class="tc">// stack fingerprint</span>
+<span class="tk">focus</span>     <span class="to">=</span> <span class="tv">"Full-Stack + AI"</span>
+<span class="tk">uni</span>       <span class="to">=</span> <span class="tv">"NUCES FAST · 3rd yr"</span>
+<span class="tk">location</span>  <span class="to">=</span> <span class="tv">"Lahore, Pakistan"</span>
+<span class="tk">available</span> <span class="to">=</span> <span class="tv teal">true</span></code></pre>
               </div>
             </div>
           </div>
@@ -147,88 +149,110 @@
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    <!-- ===== TECH STACK ===== -->
     <section id="skills">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">02</span>
-          <h2 class="sec-title">Skills</h2>
+          <h2 class="sec-title">Tech Stack</h2>
         </div>
       </div>
 
       <div class="marquee-section">
+        <p class="marquee-label reveal">MERN Stack &amp; Frontend</p>
+        <div class="marquee-outer reveal">
+          <div class="marquee-track">
+            <span class="chip">React.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">JWT Auth</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">React.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">JWT Auth</span>
+            <span class="chip">REST APIs</span>
+          </div>
+        </div>
+
         <p class="marquee-label reveal">Languages</p>
         <div class="marquee-outer reveal">
-          <div class="marquee-track">
-            <span class="chip">C / C++</span>
-            <span class="chip">Python</span>
+          <div class="marquee-track marquee-rev">
             <span class="chip">JavaScript</span>
-            <span class="chip">SQL</span>
-            <span class="chip">HTML / CSS</span>
-            <span class="chip">Swift</span>
-            <!-- duplicate for seamless loop -->
-            <span class="chip">C / C++</span>
             <span class="chip">Python</span>
-            <span class="chip">JavaScript</span>
+            <span class="chip">C / C++</span>
             <span class="chip">SQL</span>
-            <span class="chip">HTML / CSS</span>
             <span class="chip">Swift</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Python</span>
+            <span class="chip">C / C++</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Swift</span>
+            <span class="chip">HTML / CSS</span>
           </div>
         </div>
 
-        <p class="marquee-label reveal">Frameworks</p>
+        <p class="marquee-label reveal">Mobile &amp; AI / ML</p>
+        <div class="marquee-outer reveal">
+          <div class="marquee-track">
+            <span class="chip">Flutter</span>
+            <span class="chip">SwiftUI</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Recommendation Systems</span>
+            <span class="chip">Flutter</span>
+            <span class="chip">SwiftUI</span>
+            <span class="chip">Machine Learning</span>
+            <span class="chip">scikit-learn</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Recommendation Systems</span>
+          </div>
+        </div>
+
+        <p class="marquee-label reveal">Databases &amp; Tools</p>
         <div class="marquee-outer reveal">
           <div class="marquee-track marquee-rev">
-            <span class="chip">React</span>
-            <span class="chip">Next.js</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">Flutter</span>
-            <span class="chip">SwiftUI</span>
-            <span class="chip">Express</span>
-            <!-- duplicate -->
-            <span class="chip">React</span>
-            <span class="chip">Next.js</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">Flutter</span>
-            <span class="chip">SwiftUI</span>
-            <span class="chip">Express</span>
-          </div>
-        </div>
-
-        <p class="marquee-label reveal">Tools &amp; Databases</p>
-        <div class="marquee-outer reveal">
-          <div class="marquee-track">
-            <span class="chip">Git</span>
-            <span class="chip">Firebase</span>
-            <span class="chip">MongoDB</span>
             <span class="chip">PostgreSQL</span>
-            <span class="chip">REST APIs</span>
-            <span class="chip">VS Code</span>
-            <!-- duplicate -->
-            <span class="chip">Git</span>
             <span class="chip">Firebase</span>
-            <span class="chip">MongoDB</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">REST APIs</span>
+            <span class="chip">Git</span>
+            <span class="chip">Vercel</span>
             <span class="chip">VS Code</span>
+            <span class="chip">Postman</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">Git</span>
+            <span class="chip">Vercel</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Postman</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== PROJECTS ===== -->
-    <section id="projects">
+    <!-- ===== SELECTED WORK ===== -->
+    <section id="work">
       <div class="container">
         <div class="sec-header reveal">
           <span class="sec-num">03</span>
-          <h2 class="sec-title">Projects</h2>
+          <h2 class="sec-title">Selected Work</h2>
         </div>
 
         <div class="projects-grid">
 
-          <article class="project-card reveal" style="--delay:0.05s">
+          <!-- Featured: spans 2 cols on desktop -->
+          <article class="project-card featured reveal" style="--delay:0.0s">
+            <a href="https://github.com/ghayasshahid/Interngram" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="View Interngram on GitHub"></a>
             <span class="pnum" aria-hidden="true">01</span>
             <div class="pinner">
+              <div class="ptype">AI Product</div>
               <div class="ptop">
                 <h3 class="ptitle">Interngram</h3>
                 <span class="parr">↗</span>
@@ -237,14 +261,28 @@
                 <span class="chip chip-sm">React</span>
                 <span class="chip chip-sm">Node.js</span>
                 <span class="chip chip-sm">MongoDB</span>
+                <span class="chip chip-sm">ML</span>
+                <span class="chip chip-sm">JWT</span>
               </div>
-              <p class="pdesc">AI-powered internship &amp; job recommendation platform built for students.</p>
+              <p class="pdesc">
+                Full-stack internship portal with AI-driven job matching — eliminates the irrelevant-listings
+                problem for CS students. Collaborative filtering learns your skills and preferences, then surfaces
+                hyper-relevant internships. Cuts job-search noise, not signal.
+              </p>
+              <div class="pfeat">
+                <span>ML recommendation engine</span>
+                <span>Profile-based personalization</span>
+                <span>JWT authentication</span>
+                <span>Full MERN architecture</span>
+              </div>
             </div>
           </article>
 
-          <article class="project-card reveal" style="--delay:0.1s">
+          <article class="project-card reveal" style="--delay:0.08s">
+            <a href="https://github.com/ghayasshahid/Venue-Flow" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="View VenueFlow on GitHub"></a>
             <span class="pnum" aria-hidden="true">02</span>
             <div class="pinner">
+              <div class="ptype">Full-Stack SaaS</div>
               <div class="ptop">
                 <h3 class="ptitle">VenueFlow</h3>
                 <span class="parr">↗</span>
@@ -254,13 +292,15 @@
                 <span class="chip chip-sm">Node.js</span>
                 <span class="chip chip-sm">PostgreSQL</span>
               </div>
-              <p class="pdesc">Full-featured marriage hall booking &amp; management platform with admin dashboard.</p>
+              <p class="pdesc">Eliminated double-bookings and manual coordination for marriage hall businesses — real-time calendar conflict detection, automated finance tracking, full booking lifecycle from inquiry to confirmation.</p>
             </div>
           </article>
 
-          <article class="project-card reveal" style="--delay:0.15s">
+          <article class="project-card reveal" style="--delay:0.14s">
+            <a href="https://github.com/ghayasshahid/KhelKood" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="View KhelKood on GitHub"></a>
             <span class="pnum" aria-hidden="true">03</span>
             <div class="pinner">
+              <div class="ptype">Cross-Platform Mobile</div>
               <div class="ptop">
                 <h3 class="ptitle">KhelKood</h3>
                 <span class="parr">↗</span>
@@ -268,14 +308,17 @@
               <div class="pchips">
                 <span class="chip chip-sm">Flutter</span>
                 <span class="chip chip-sm">Firebase</span>
+                <span class="chip chip-sm">Dart</span>
               </div>
-              <p class="pdesc">Sports matchmaking app — find players, form teams, schedule games nearby.</p>
+              <p class="pdesc">Location-aware sports matchmaking — connects players, assembles teams, books courts, and tracks live scores in real time. Gets games scheduled in minutes, not days.</p>
             </div>
           </article>
 
           <article class="project-card reveal" style="--delay:0.2s">
+            <a href="https://github.com/ghayasshahid/GAS-Restaurant-Management-System" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="View Restaurant Manager on GitHub"></a>
             <span class="pnum" aria-hidden="true">04</span>
             <div class="pinner">
+              <div class="ptype">Full-Stack Dashboard</div>
               <div class="ptop">
                 <h3 class="ptitle">Restaurant Manager</h3>
                 <span class="parr">↗</span>
@@ -283,14 +326,17 @@
               <div class="pchips">
                 <span class="chip chip-sm">React</span>
                 <span class="chip chip-sm">Node.js</span>
+                <span class="chip chip-sm">MongoDB</span>
               </div>
-              <p class="pdesc">Full-stack system covering orders, menu management, and staff operations.</p>
+              <p class="pdesc">Replaced clipboard chaos with a unified ops dashboard — real-time order flow, live menu control, and customer analytics in one system built for how restaurants actually run.</p>
             </div>
           </article>
 
-          <article class="project-card reveal" style="--delay:0.25s">
+          <article class="project-card reveal" style="--delay:0.26s">
+            <a href="https://github.com/ghayasshahid/Krlaangy-Prime" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="View Solitaire on GitHub"></a>
             <span class="pnum" aria-hidden="true">05</span>
             <div class="pinner">
+              <div class="ptype">Systems Engineering</div>
               <div class="ptop">
                 <h3 class="ptitle">Solitaire Game</h3>
                 <span class="parr">↗</span>
@@ -298,22 +344,26 @@
               <div class="pchips">
                 <span class="chip chip-sm">C++</span>
                 <span class="chip chip-sm">OOP</span>
+                <span class="chip chip-sm">STL</span>
               </div>
-              <p class="pdesc">Classic Klondike solitaire engineered from scratch using clean OOP design.</p>
+              <p class="pdesc">Console-based game engineered with stacks, queues, and OOP — complete state machine, move validation, and rendering in C++ without a single external library. CS fundamentals, no shortcuts.</p>
             </div>
           </article>
 
-          <article class="project-card reveal" style="--delay:0.3s">
+          <article class="project-card reveal" style="--delay:0.32s">
+            <a href="https://github.com/ghayasshahid/Alpha-Catcher" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="View Alphabet Catcher on GitHub"></a>
             <span class="pnum" aria-hidden="true">06</span>
             <div class="pinner">
+              <div class="ptype">Low-Level Systems</div>
               <div class="ptop">
                 <h3 class="ptitle">Alphabet Catcher</h3>
                 <span class="parr">↗</span>
               </div>
               <div class="pchips">
                 <span class="chip chip-sm">x86 Assembly</span>
+                <span class="chip chip-sm">8086</span>
               </div>
-              <p class="pdesc">Falling-alphabet catcher game written entirely in x86 Assembly — as low-level as it gets.</p>
+              <p class="pdesc">Arcade game in x86 Assembly using hardware interrupts — direct I/O, custom memory management, no OS, no libraries, no abstractions. Shows CPU-level architecture understanding.</p>
             </div>
           </article>
 
@@ -333,43 +383,43 @@
           <div class="ach-item reveal">
             <span class="ach-idx">01</span>
             <div class="ach-body">
-              <h3>Harvard CS50x</h3>
-              <p>Harvard University's introduction to computer science — one of the most rigorous online CS courses available.</p>
+              <h3>Harvard CS50x &mdash; Certificate of Excellence</h3>
+              <p>Completed Harvard's foundational CS course — one of the most rigorous programs online, covering algorithms, data structures, memory management, and systems programming.</p>
             </div>
           </div>
           <div class="ach-item reveal">
             <span class="ach-idx">02</span>
             <div class="ach-body">
-              <h3>Harvard CS50 Python</h3>
-              <p>Harvard's Python-focused course covering algorithms, data structures, and software design principles.</p>
+              <h3>Harvard CS50 Python &mdash; Certificate</h3>
+              <p>Production-quality Python engineering, software design principles, and algorithmic thinking from one of the world's best CS programs.</p>
             </div>
           </div>
           <div class="ach-item reveal">
             <span class="ach-idx">03</span>
             <div class="ach-body">
-              <h3>iOS Development Bootcamp</h3>
-              <p>Intensive bootcamp in Swift &amp; SwiftUI — built and shipped multiple fully functional iOS applications.</p>
+              <h3>Machine Learning &mdash; Kaggle Certificate</h3>
+              <p>Certified in ML fundamentals: decision trees, model validation, overfitting, and random forests. The theoretical foundation behind the AI recommendation engine in Interngram.</p>
             </div>
           </div>
           <div class="ach-item reveal">
             <span class="ach-idx">04</span>
             <div class="ach-body">
-              <h3>High Achiever Award — O-Levels</h3>
-              <p>Awarded for achieving <strong>8 A* and A grades</strong> in O-Level examinations.</p>
+              <h3>iOS App Development Bootcamp &mdash; Angela Yu</h3>
+              <p>Intensive Swift &amp; SwiftUI bootcamp — built and shipped multiple fully functional iOS applications, expanding the mobile engineering side of the full-stack.</p>
             </div>
           </div>
           <div class="ach-item reveal">
             <span class="ach-idx">05</span>
             <div class="ach-body">
-              <h3>Senior VP — NUCES CBS</h3>
-              <p>Elected Senior Vice President of NUCES Computer Business Society — leading tech events and industry outreach.</p>
+              <h3>High Achiever Award &mdash; O-Levels</h3>
+              <p>Awarded for <strong>8 A* and A grades</strong> in Cambridge O-Level examinations — consistent academic performance before entering NUCES FAST.</p>
             </div>
           </div>
           <div class="ach-item reveal">
             <span class="ach-idx">06</span>
             <div class="ach-body">
-              <h3>Intro to Machine Learning — Kaggle</h3>
-              <p>Completed Kaggle's Intro to ML certification, covering decision trees, model validation, random forests, and underfitting vs overfitting.</p>
+              <h3>Senior Vice President &mdash; NUCES CBS</h3>
+              <p>Elected Sr VP of the Computer Business Society at NUCES FAST — leading tech events, industry speaker sessions, and student-to-industry networking at scale.</p>
             </div>
           </div>
         </div>
@@ -388,21 +438,24 @@
         <div class="contact-heading-wrap reveal">
           <h2 class="contact-heading">
             <span class="ch-stroke">Let's</span>
-            <span class="ch-fill">Work.</span>
+            <span class="ch-fill">Build.</span>
           </h2>
         </div>
 
-        <p class="contact-sub reveal">Open to opportunities, collabs, or just a chat.</p>
+        <p class="contact-sub reveal">
+          Open to full-stack, AI engineering, or mobile roles — internships and full-time.
+          Let's ship something real.
+        </p>
 
         <div class="contact-ctas reveal">
           <a href="mailto:ghayasshahid12@gmail.com" class="btn btn-primary magnetic">
             Email Me <span class="btn-arr">↗</span>
           </a>
-          <a href="https://wa.me/923019106147" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp magnetic">
-            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          <a href="https://linkedin.com/in/ghayasshahid" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin magnetic">
+            <svg class="li-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
-            WhatsApp
+            LinkedIn
           </a>
           <a href="https://github.com/ghayasshahid" target="_blank" rel="noopener noreferrer" class="btn btn-ghost magnetic">
             GitHub
@@ -414,7 +467,7 @@
   </main>
 
   <footer>
-    <p>Built by <span class="teal">Ghayas Shahid</span> &middot; 2026</p>
+    <p>Designed &amp; built by <span class="teal">Ghayas Shahid</span> &middot; 2025</p>
   </footer>
 
   <script src="script.js"></script>

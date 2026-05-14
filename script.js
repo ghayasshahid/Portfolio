@@ -1,6 +1,6 @@
 /* ===== CUSTOM CURSOR =====
-   Uses transform (GPU layer) instead of left/top to eliminate lag.
-   Lerp factor 0.22 keeps smooth feel without noticeable delay.
+   transform-based positioning (GPU layer) — zero layout cost, zero lag.
+   Lerp 0.22 gives smooth feel without visible delay.
 */
 const ring = document.getElementById('cursor-ring');
 const dot  = document.getElementById('cursor-dot');
@@ -10,13 +10,11 @@ if (window.matchMedia('(hover: hover)').matches) {
 
   document.addEventListener('mousemove', e => {
     mx = e.clientX; my = e.clientY;
-    /* Dot snaps instantly — offset by half its size (2.5px) to center */
     dot.style.transform = `translate(${mx - 2.5}px, ${my - 2.5}px)`;
     dot.classList.add('on');
     ring.classList.add('on');
   }, { passive: true });
 
-  /* Ring lerps toward cursor — offset by half ring size (18px) to center */
   (function trackRing() {
     rx += (mx - rx) * 0.22;
     ry += (my - ry) * 0.22;
@@ -24,8 +22,7 @@ if (window.matchMedia('(hover: hover)').matches) {
     requestAnimationFrame(trackRing);
   })();
 
-  /* Expand ring over interactive elements */
-  document.querySelectorAll('a, button, .project-card, .stat-card, .chip').forEach(el => {
+  document.querySelectorAll('a, button, .project-card, .stat-card, .chip, .ach-item').forEach(el => {
     el.addEventListener('mouseenter', () => ring.classList.add('big'));
     el.addEventListener('mouseleave', () => ring.classList.remove('big'));
   });
@@ -39,19 +36,17 @@ document.querySelectorAll('.magnetic').forEach(el => {
     const dy = (e.clientY - (r.top  + r.height / 2)) * 0.28;
     el.style.transform = `translate(${dx}px, ${dy}px)`;
   });
-  el.addEventListener('mouseleave', () => {
-    el.style.transform = '';
-  });
+  el.addEventListener('mouseleave', () => { el.style.transform = ''; });
 });
 
-/* ===== NAV: blur on scroll ===== */
+/* ===== NAV: scroll blur ===== */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 50);
 }, { passive: true });
 
 /* ===== NAV: scrollspy ===== */
-const sections  = document.querySelectorAll('section[id]');
+const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-links a');
 
 const spyObs = new IntersectionObserver(entries => {
@@ -90,13 +85,35 @@ const revObs = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 
 /* ===== HERO TYPING EFFECT ===== */
-const tagline  = "Not waiting to graduate — already shipping production apps.";
-const typedEl  = document.getElementById('typed-text');
-let i = 0;
+const phrases = [
+  "Full-Stack Developer. AI-Powered Products. Real Impact.",
+  "I ship production-grade apps — not just side projects that stall.",
+  "MERN · Flutter · ML. From API to app, end to end."
+];
+const typedEl = document.getElementById('typed-text');
 
-setTimeout(() => {
-  const iv = setInterval(() => {
-    typedEl.textContent += tagline[i++];
-    if (i >= tagline.length) clearInterval(iv);
-  }, 46);
-}, 1100);
+let phraseIdx = 0, charIdx = 0, deleting = false;
+
+function typeLoop() {
+  const current = phrases[phraseIdx];
+
+  if (!deleting) {
+    typedEl.textContent = current.slice(0, ++charIdx);
+    if (charIdx === current.length) {
+      setTimeout(() => { deleting = true; typeLoop(); }, 2600);
+      return;
+    }
+  } else {
+    typedEl.textContent = current.slice(0, --charIdx);
+    if (charIdx === 0) {
+      deleting = false;
+      phraseIdx = (phraseIdx + 1) % phrases.length;
+      setTimeout(typeLoop, 420);
+      return;
+    }
+  }
+
+  setTimeout(typeLoop, deleting ? 22 : 46);
+}
+
+setTimeout(typeLoop, 1100);
