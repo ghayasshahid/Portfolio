@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghayas Shahid — CS Student & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Ghayas Shahid, CS Student at NUCES FAST and Full-Stack Developer based in Lahore, Pakistan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- Noise texture overlay -->
+  <svg class="noise-svg" aria-hidden="true" focusable="false">
+    <filter id="noise-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.68" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#noise-filter)"/>
+  </svg>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">GS<span class="logo-dot">.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero">
+      <!-- Ambient orbs -->
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="orb orb-3" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name">
+          <div class="name-row">
+            <div class="name-mask"><span class="name-filled">Ghayas</span></div>
+          </div>
+          <div class="name-row">
+            <div class="name-mask"><span class="name-outline">Shahid</span></div>
+          </div>
+        </h1>
+
+        <div class="hero-meta">
+          <div class="hero-rule" aria-hidden="true"></div>
+          <p class="hero-role">CS Student <span class="amp">&amp;</span> Full-Stack Developer</p>
+        </div>
+
+        <p class="hero-tagline">
+          <span id="typed-text"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary magnetic">View My Work <span class="btn-arr">↗</span></a>
+          <a href="#contact" class="btn btn-ghost magnetic">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-num">01</span>
+          <h2 class="sec-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a third-year Computer Science student at <strong>NUCES FAST</strong> in Lahore,
+              Pakistan — obsessed with building real, useful products that actually ship.
+            </p>
+            <p>
+              I work across the full stack: React frontends, Node backends, Flutter mobile apps,
+              and even x86 Assembly games. I care about craft at every layer.
+            </p>
+            <p>
+              Outside code, I serve as <strong>Senior VP at NUCES CBS</strong>,
+              bridging the gap between students and the tech industry.
+            </p>
+          </div>
+
+          <div class="about-right">
+            <div class="about-stats reveal">
+              <div class="stat-card">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">Years building</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">6</span>
+                <span class="stat-label">Projects shipped</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">5</span>
+                <span class="stat-label">Certs &amp; awards</span>
+              </div>
+            </div>
+
+            <div class="about-terminal reveal">
+              <div class="terminal-bar">
+                <span class="tdot red"></span>
+                <span class="tdot yellow"></span>
+                <span class="tdot green"></span>
+                <span class="terminal-fname">ghayas.config</span>
+              </div>
+              <div class="terminal-body">
+                <pre><code><span class="tc">// current status</span>
+<span class="tk">location</span>  <span class="to">=</span> <span class="tv">"Lahore, PK"</span>
+<span class="tk">uni</span>       <span class="to">=</span> <span class="tv">"NUCES FAST"</span>
+<span class="tk">year</span>      <span class="to">=</span> <span class="tv">"3rd · CS"</span>
+<span class="tk">open</span>      <span class="to">=</span> <span class="tv teal">true</span></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-num">02</span>
+          <h2 class="sec-title">Skills</h2>
+        </div>
+      </div>
+
+      <div class="marquee-section">
+        <p class="marquee-label reveal">Languages</p>
+        <div class="marquee-outer reveal">
+          <div class="marquee-track">
+            <span class="chip">C / C++</span>
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">Swift</span>
+            <!-- duplicate for seamless loop -->
+            <span class="chip">C / C++</span>
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">SQL</span>
+            <span class="chip">HTML / CSS</span>
+            <span class="chip">Swift</span>
+          </div>
+        </div>
+
+        <p class="marquee-label reveal">Frameworks</p>
+        <div class="marquee-outer reveal">
+          <div class="marquee-track marquee-rev">
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Flutter</span>
+            <span class="chip">SwiftUI</span>
+            <span class="chip">Express</span>
+            <!-- duplicate -->
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Flutter</span>
+            <span class="chip">SwiftUI</span>
+            <span class="chip">Express</span>
+          </div>
+        </div>
+
+        <p class="marquee-label reveal">Tools &amp; Databases</p>
+        <div class="marquee-outer reveal">
+          <div class="marquee-track">
+            <span class="chip">Git</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">VS Code</span>
+            <!-- duplicate -->
+            <span class="chip">Git</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-num">03</span>
+          <h2 class="sec-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="project-card reveal" style="--delay:0.05s">
+            <span class="pnum" aria-hidden="true">01</span>
+            <div class="pinner">
+              <div class="ptop">
+                <h3 class="ptitle">Interngram</h3>
+                <span class="parr">↗</span>
+              </div>
+              <div class="pchips">
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">Node.js</span>
+                <span class="chip chip-sm">MongoDB</span>
+              </div>
+              <p class="pdesc">AI-powered internship &amp; job recommendation platform built for students.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay:0.1s">
+            <span class="pnum" aria-hidden="true">02</span>
+            <div class="pinner">
+              <div class="ptop">
+                <h3 class="ptitle">VenueFlow</h3>
+                <span class="parr">↗</span>
+              </div>
+              <div class="pchips">
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">Node.js</span>
+                <span class="chip chip-sm">PostgreSQL</span>
+              </div>
+              <p class="pdesc">Full-featured marriage hall booking &amp; management platform with admin dashboard.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay:0.15s">
+            <span class="pnum" aria-hidden="true">03</span>
+            <div class="pinner">
+              <div class="ptop">
+                <h3 class="ptitle">KhelKood</h3>
+                <span class="parr">↗</span>
+              </div>
+              <div class="pchips">
+                <span class="chip chip-sm">Flutter</span>
+                <span class="chip chip-sm">Firebase</span>
+              </div>
+              <p class="pdesc">Sports matchmaking app — find players, form teams, schedule games nearby.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay:0.2s">
+            <span class="pnum" aria-hidden="true">04</span>
+            <div class="pinner">
+              <div class="ptop">
+                <h3 class="ptitle">Restaurant Manager</h3>
+                <span class="parr">↗</span>
+              </div>
+              <div class="pchips">
+                <span class="chip chip-sm">React</span>
+                <span class="chip chip-sm">Node.js</span>
+              </div>
+              <p class="pdesc">Full-stack system covering orders, menu management, and staff operations.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay:0.25s">
+            <span class="pnum" aria-hidden="true">05</span>
+            <div class="pinner">
+              <div class="ptop">
+                <h3 class="ptitle">Solitaire Game</h3>
+                <span class="parr">↗</span>
+              </div>
+              <div class="pchips">
+                <span class="chip chip-sm">C++</span>
+                <span class="chip chip-sm">OOP</span>
+              </div>
+              <p class="pdesc">Classic Klondike solitaire engineered from scratch using clean OOP design.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal" style="--delay:0.3s">
+            <span class="pnum" aria-hidden="true">06</span>
+            <div class="pinner">
+              <div class="ptop">
+                <h3 class="ptitle">Alphabet Catcher</h3>
+                <span class="parr">↗</span>
+              </div>
+              <div class="pchips">
+                <span class="chip chip-sm">x86 Assembly</span>
+              </div>
+              <p class="pdesc">Falling-alphabet catcher game written entirely in x86 Assembly — as low-level as it gets.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements">
+      <div class="container">
+        <div class="sec-header reveal">
+          <span class="sec-num">04</span>
+          <h2 class="sec-title">Achievements</h2>
+        </div>
+
+        <div class="ach-list">
+          <div class="ach-item reveal">
+            <span class="ach-idx">01</span>
+            <div class="ach-body">
+              <h3>Harvard CS50x</h3>
+              <p>Harvard University's introduction to computer science — one of the most rigorous online CS courses available.</p>
+            </div>
+          </div>
+          <div class="ach-item reveal">
+            <span class="ach-idx">02</span>
+            <div class="ach-body">
+              <h3>Harvard CS50 Python</h3>
+              <p>Harvard's Python-focused course covering algorithms, data structures, and software design principles.</p>
+            </div>
+          </div>
+          <div class="ach-item reveal">
+            <span class="ach-idx">03</span>
+            <div class="ach-body">
+              <h3>iOS Development Bootcamp</h3>
+              <p>Intensive bootcamp in Swift &amp; SwiftUI — built and shipped multiple fully functional iOS applications.</p>
+            </div>
+          </div>
+          <div class="ach-item reveal">
+            <span class="ach-idx">04</span>
+            <div class="ach-body">
+              <h3>High Achiever Award — O-Levels</h3>
+              <p>Awarded for achieving <strong>8 A* and A grades</strong> in O-Level examinations.</p>
+            </div>
+          </div>
+          <div class="ach-item reveal">
+            <span class="ach-idx">05</span>
+            <div class="ach-body">
+              <h3>Senior VP — NUCES CBS</h3>
+              <p>Elected Senior Vice President of NUCES Computer Business Society — leading tech events and industry outreach.</p>
+            </div>
+          </div>
+          <div class="ach-item reveal">
+            <span class="ach-idx">06</span>
+            <div class="ach-body">
+              <h3>Intro to Machine Learning — Kaggle</h3>
+              <p>Completed Kaggle's Intro to ML certification, covering decision trees, model validation, random forests, and underfitting vs overfitting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="container contact-inner">
+        <div class="contact-eye reveal">
+          <span class="sec-num">05</span>
+          <span class="contact-label">Get In Touch</span>
+        </div>
+
+        <div class="contact-heading-wrap reveal">
+          <h2 class="contact-heading">
+            <span class="ch-stroke">Let's</span>
+            <span class="ch-fill">Work.</span>
+          </h2>
+        </div>
+
+        <p class="contact-sub reveal">Open to opportunities, collabs, or just a chat.</p>
+
+        <div class="contact-ctas reveal">
+          <a href="mailto:ghayasshahid12@gmail.com" class="btn btn-primary magnetic">
+            Email Me <span class="btn-arr">↗</span>
+          </a>
+          <a href="https://wa.me/923019106147" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp magnetic">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+          <a href="https://github.com/ghayasshahid" target="_blank" rel="noopener noreferrer" class="btn btn-ghost magnetic">
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built by <span class="teal">Ghayas Shahid</span> &middot; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
