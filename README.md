@@ -2,7 +2,7 @@
 
 Personal portfolio website. Built to position me as a Full-Stack Developer who ships AI-powered products.
 
-**Live:** [ghayasshahid.github.io/Portfolio](https://ghayasshahid.github.io/Portfolio) <!-- update if hosted elsewhere -->
+**Live:** [ghayasshahid.github.io/Portfolio](https://ghayasshahid.github.io/Portfolio)
 
 ## Stack
 
