@@ -88,7 +88,7 @@ document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 const phrases = [
   "Full-Stack Developer. AI-Powered Products. Real Impact.",
   "I ship production-grade apps — not just side projects that stall.",
-  "MERN · Flutter · ML. From API to app, end to end."
+  "MERN · Flutter · AI features. From API to app, end to end."
 ];
 const typedEl = document.getElementById('typed-text');
 
