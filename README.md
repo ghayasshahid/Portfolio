@@ -36,4 +36,4 @@ HTML · CSS · Vanilla JavaScript — no frameworks, fast by default.
 
 ## Contact
 
-ghayasshahid12@gmail.com · [LinkedIn](https://linkedin.com/in/ghayasshahid) · [GitHub](https://github.com/ghayasshahid)
+ghayasshahid12@gmail.com · [LinkedIn](https://www.linkedin.com/in/ghayasshahid1/) · [GitHub](https://github.com/ghayasshahid)
