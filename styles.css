@@ -460,28 +460,19 @@ section { padding: 110px 0; }
 /* Scroll indicator */
 .hero-scroll {
   position: absolute;
-  bottom: 36px; left: 50%;
+  bottom: 28px; left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-dim);
-  font-family: var(--f-mono);
-  font-size: 0.6rem;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
   animation: heroUp 0.7s var(--ease) 1.5s both;
+  pointer-events: none;
 }
-.scroll-line {
-  width: 1px; height: 48px;
-  background: linear-gradient(to bottom, var(--text-dim), transparent);
-  animation: scrollDrop 2s ease infinite;
+.scroll-chevron {
+  width: 22px; height: 22px;
+  color: var(--text-dim);
+  animation: chevronBounce 2s ease-in-out infinite;
 }
-@keyframes scrollDrop {
-  0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
-  50%  { transform: scaleY(1); transform-origin: top; opacity: 1; }
-  100% { transform: scaleY(1); transform-origin: bottom; opacity: 0; }
+@keyframes chevronBounce {
+  0%, 100% { transform: translateY(0);   opacity: 0.4; }
+  50%       { transform: translateY(6px); opacity: 0.9; }
 }
 
 /* ===== ABOUT ===== */
